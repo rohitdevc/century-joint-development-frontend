@@ -1,0 +1,23 @@
+services:
+  cjd:
+    container_name: century-cjd
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        API_DOMAIN_NAME: ${API_DOMAIN_NAME}
+        NEXT_PUBLIC_PATH: ${NEXT_PUBLIC_PATH}
+        CONTEXT: ${CONTEXT}
+
+    env_file:
+      - .env
+
+    environment:
+      NODE_ENV: production
+      PORT: 2971
+      HOSTNAME: 0.0.0.0
+
+    ports:
+      - "2971:2971"
+
+    restart: unless-stopped
