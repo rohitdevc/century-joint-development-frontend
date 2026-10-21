@@ -1,3 +1,5 @@
+name: century-cjd-frontend
+
 services:
   cjd:
     container_name: century-cjd
