@@ -17,6 +17,7 @@ services:
       NODE_ENV: production
       PORT: 2971
       HOSTNAME: 0.0.0.0
+      API_DOMAIN_NAME: ${API_DOMAIN_NAME}
 
     ports:
       - "2971:2971"

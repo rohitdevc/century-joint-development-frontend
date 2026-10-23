@@ -33,9 +33,12 @@ FROM base AS runner
 
 WORKDIR /app
 
+ARG API_DOMAIN_NAME
+
 ENV NODE_ENV=production
 ENV PORT=2971
 ENV HOSTNAME=0.0.0.0
+ENV API_DOMAIN_NAME=$API_DOMAIN_NAME
 
 RUN addgroup --system --gid 1001 nodejs \
     && adduser --system --uid 1001 nextjs
