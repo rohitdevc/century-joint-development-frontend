@@ -3,7 +3,7 @@
 The frontend application for the Century Joint Developers website, built with Next.js, React, TypeScript, and Tailwind CSS.
 
 - **Repository:** https://github.com/rohitdevc/century-joint-development-frontend
-- **Website:** https://cjd.centuryrealestate.in/
+- **Netlify Website:** https://century-cjd.netlify.app/
 
 ## Overview
 
@@ -22,6 +22,7 @@ The application uses reusable React components, interactive sliders, scroll-trig
 - **SEO Metadata:** Generates page titles, descriptions, canonical URLs, Open Graph metadata, and Twitter card metadata.
 - **Analytics:** Integrates Google Analytics.
 - **Docker Support:** Includes a multi-stage Dockerfile and Docker Compose configuration for deployment.
+- **Netlify Deployment** — Hosted on Netlify with deployment-aware Next.js configuration.
 
 ## Technology Stack
 
